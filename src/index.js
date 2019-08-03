@@ -29,7 +29,7 @@ const defaultElementPosition = () => ({
   ease: Linear.easeNone
 });
 
-export default selectors => {
+module.exports = selectors => {
   // first item is fixed, rest are absolute
   const elements = selectors.map((selector, i) => {
     const el = window.document.querySelector(selector);
