@@ -2,13 +2,14 @@
   "name": "awesome-scroll",
   "version": "1.0.0",
   "description": "Lib to allow elements to fly in from left/right on scroll",
-  "main": "index.min.js",
+  "main": "src/index.js",
   "author": "Sean Holden",
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
+    "imports-loader": "^0.8.0",
     "prettier": "^1.18.2",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"

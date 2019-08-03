@@ -11,11 +11,9 @@
  * If these rules aren't met, there may be unexpected results.
  *
  * */
-import TweenMax from "TweenMax";
-import ScrollMagic from "ScrollMagic";
-import "animation.gsap";
-import "debug.addIndicators";
-import { Linear } from "gsap";
+import { TweenMax, Linear } from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'imports-loader?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
 
 const DURATION = {
   FOREVER: 0
@@ -29,7 +27,7 @@ const defaultElementPosition = () => ({
   ease: Linear.easeNone
 });
 
-module.exports = selectors => {
+export default selectors => {
   // first item is fixed, rest are absolute
   const elements = selectors.map((selector, i) => {
     const el = window.document.querySelector(selector);
