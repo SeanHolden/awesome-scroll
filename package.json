@@ -2,7 +2,7 @@
   "name": "awesome-scroll",
   "version": "1.0.0",
   "description": "Lib to allow elements to fly in from left/right on scroll",
-  "main": "src/index.js",
+  "main": "index.min.js",
   "author": "Sean Holden",
   "license": "MIT",
   "scripts": {
