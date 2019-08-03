@@ -105,7 +105,7 @@ const scene = controller => {
       duration: duration => ({
         pin: el => {
           controller.addScene(
-            new ScrollMagic.Scene({ duration, offset }).setPin(el)
+            new ScrollMagic.Scene({ duration, offset, pushFollowers: false }).setPin(el)
           );
         },
         move: el => {
@@ -141,7 +141,7 @@ const scene = controller => {
           return {
             fromRight: () => {
               controller.addScene(
-                new ScrollMagic.Scene({ duration, offset })
+                new ScrollMagic.Scene({ duration, offset, pushFollowers: false })
                   .setTween(
                     TweenMax.fromTo(
                       el,
@@ -160,7 +160,7 @@ const scene = controller => {
             },
             fromLeft: () => {
               controller.addScene(
-                new ScrollMagic.Scene({ duration, offset })
+                new ScrollMagic.Scene({ duration, offset, pushFollowers: false })
                   .setTween(
                     TweenMax.fromTo(
                       el,
